@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react"; // Using lucide-react for icons
+import { Menu, X, Leaf } from "lucide-react"; // Using lucide-react for icons
 
 const mainNavLinks = [
   { name: "Home", to: "/" },
@@ -51,7 +51,8 @@ export default function Header() {
         <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo / Site Name */}
           <div className="flex-shrink-0">
-            <Link to="/" className="text-xl sm:text-2xl font-bold hover:text-green-300 transition-colors duration-300">
+            <Link to="/" className="flex items-center text-xl sm:text-2xl font-bold hover:text-green-300 transition-colors duration-300">
+              <Leaf className="h-6 w-6 sm:h-7 sm:w-7 mr-2 text-green-400" />
               Luong Landscaping
             </Link>
           </div>
